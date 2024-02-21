@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        var item= prompt('masukkan nama pakaian wanita/pakaian pria: \n (cth: gamis, koko, peci, jilbab, sarung)');
+
+        switch(item) {
+            case 'gamis':
+            case 'jilbab':
+            alert ('pakaian wanita!');
+            break;
+            case 'koko':
+            case 'sarung':
+            case 'peci':
+            alert ('pakaian pria!');
+            break;
+            
+            default:
+                alert('anda memasukkan nama pakaian wanita/pria yang salah ');
+                break;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Angka</title>
+</head>
+<body>
+    <script>
+        // Membangkitkan bilangan random antara 1 dan 10
+        var kesempatan = 3;
+        var bilanganRandom = Math.floor(Math.random() * 10) + 1; 
+    
+        while (kesempatan > 0) {
+            var tebakan = prompt('Tebak bilangan antara 1 dan 10. Anda memiliki ' + kesempatan + ' kesempatan.');
+    
+            if (tebakan === null) {
+                alert('Anda membatalkan permainan.');
+                break;
+            }
+    
+            var tebakanAngka = parseInt(tebakan);
+    
+            if (isNaN(tebakanAngka)|| tebakanAngka < 1 || tebakanAngka > 10) {
+                alert('Masukkan angka antara 1 dan 10.');
+            } else {
+                if (tebakanAngka === bilanganRandom) {
+                    alert('Selamat, tebakan Anda benar!');
+                    break;
+                } else {
+                    alert('Tebakan Anda salah.');
+                    kesempatan--;
+                }
+            }
+        }
+    
+        if (kesempatan === 0) {
+            alert('Anda sudah menggunakan semua kesempatan. Angka yang benar adalah ' + bilanganRandom + '.');
+        }
+    </script>
+    
+</body>
+</html>
+
+
