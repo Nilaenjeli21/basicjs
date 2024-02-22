@@ -10,8 +10,15 @@
 // });
 
     //10. Map --> mengembalikan array
+    // var angka = [1,2,3,4,5,8,7,12,10];
+    // var angka2 = angka.map(function(e){
+    //     return e * 2;
+    // });
+    // console.log(angka2.join('-'));
+
+    // 10. sort --> mengurutkan array
     var angka = [1,2,3,4,5,8,7,12,10];
-    var angka2 = angka.ForEach(function(e){
-        return e;
-    });
-    console.log(angka2.join('-'));
+    angka.sort(function(a,b){
+        return (a-b);
+    })
+    console.log(angka.join('-'));
