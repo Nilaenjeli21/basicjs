@@ -1,4 +1,4 @@
-// forEach
+//9. forEach
 //  var angka = [1,2,3,4,5,6,7,8];
 //  var nama  = ['Nila', 'Caca', 'Silvia','Putri'];
 
@@ -9,7 +9,7 @@
 // //     console.log(e);
 // });
 
-    //Map --> mengembalikan array
+    //10. Map --> mengembalikan array
     var angka = [1,2,3,4,5,8,7,12,10];
     var angka2 = angka.ForEach(function(e){
         return e;
