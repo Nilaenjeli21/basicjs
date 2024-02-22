@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Scope</title>
+</head>
+<body>
+<script>
+        ///global scope atau global windows
+    var a = 1; 
+
+
+    function tes (a) {
+        console.log(a);
+    }
+
+tes(2); //ini akan terbaca sebagai a yang didalam scope di parameter di dalam block variabel
+console.log(a);//ini terbaca yang di variabel global
+
+</script>
+</body>
+</html>

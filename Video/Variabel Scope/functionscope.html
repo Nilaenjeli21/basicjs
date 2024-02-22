@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Scope</title>
+</head>
+<body>
+<script>
+        ///global scope atau global windows
+//var a = 1; pengganti ini
+"use strict"
+
+function tes(){
+
+    //name conflict
+     a = 2;
+ //   console.log(windows.a); yang dimaksud disini menjalankan variabel global atau diluar block
+
+}
+
+tes();
+console.log(a);
+
+</script>
+</body>
+</html>
